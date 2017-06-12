@@ -22,7 +22,7 @@ $pdf = new FPDF('P', 'cm', 'A4');
 
     $pdf->Ln(1.5);
     $pdf->SetFont('Arial', 'I', 12);
-	$pdf->Cell(0, 2, 'The report was generated on '.date("F j, Y, g:i a"), 0, 0, 'R');
+	$pdf->Cell(0, 2, 'The report was generated on '.date('d.m.Y H:i:s', strtotime("-1 hours")), 0, 0, 'R');
     
     $pdf->Ln(2.5);
 	
