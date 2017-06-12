@@ -24,9 +24,12 @@ doc.font('Times-Roman')
     align: 'center', underline: true})
    .moveDown(0.5)
    
+   var d = new Date();
+  d.setHours(d.getHours() + 3);
+   
 doc.font('Times-Roman')
    .fontSize(12)
-   .text('The report was generated on '+new Date().toUTCString(), {
+   .text('The report was generated on '+d.toUTCString(), {
     align: 'right'})
    .moveDown(2.5)
    
