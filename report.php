@@ -37,6 +37,7 @@ $pdf = new FPDF('P', 'cm', 'A4');
         array('Company', $company),
 		array('Name', $name),
 		array('Surname', $surname),
+		array('Address', $address),
 		array('Email', $email),
 		array('Telephones', $tel1)
     );
