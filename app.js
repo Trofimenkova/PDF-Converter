@@ -20,7 +20,7 @@ doc.addPage
 	
 doc.font('Times-Roman')
    .fontSize(24)
-   .text('Begining of the practice', {
+   .text(request.body.event, {
     align: 'center', underline: true})
    .moveDown(0.5)
    
